@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тёпка — мастерская керамики в Санкт-Петербурге</title>
+  <meta name="description" content="Мастерская керамики «Тёпка» в Санкт-Петербурге: курсы лепки, авторские изделия, уютная атмосфера." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= ШАПКА ================= -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo" aria-label="Тёпка — на главную">
+        <span class="logo__mark" aria-hidden="true">🏺</span>
+        <span class="logo__text">Тёпка</span>
+      </a>
+
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link">О мастерской</a></li>
+          <li><a href="#courses" class="nav__link">Курсы</a></li>
+          <li><a href="#gallery" class="nav__link">Галерея</a></li>
+          <li><a href="#contacts" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contacts" class="btn btn--small header__cta">Записаться</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Санкт-Петербург · мастерская керамики</p>
+          <h1 class="hero__title">
+            Лепим<br />
+            <span class="hero__title-accent">тёплое</span><br />
+            руками
+          </h1>
+          <p class="hero__lead">
+            «Тёпка» — мастерская керамики в Санкт-Петербурге. Мы лепим уютные вещи
+            и обучаем этому: приходите на курс, чтобы создать свою кружку, домик
+            или вазу, и забрать домой кусочек тепла.
+          </p>
+          <div class="hero__actions">
+            <a href="#courses" class="btn">Выбрать курс</a>
+            <a href="#about" class="btn btn--ghost">О мастерской</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <img src="images/ker1.jpg" alt="Участники мастер-класса лепят из глины за большим столом" />
+          <span class="hero__stamp" aria-hidden="true">hand&nbsp;made</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= О МАСТЕРСКОЙ ================= -->
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <div class="about__media">
+          <img src="images/ker2.jpg" alt="Керамический домик, расписанный вручную" />
+        </div>
+        <div class="about__text">
+          <h2 class="section-title">О мастерской</h2>
+          <p class="hand">маленькая, но очень тёплая</p>
+          <p>
+            Мы — небольшая мастерская в центре Петербурга. У нас пахнет глиной,
+            играет тихая музыка и всегда есть чай. Здесь можно впервые взять глину
+            в руки — или вернуться к любимому делу.
+          </p>
+          <p>
+            Мы верим, что керамика — это не про идеальный результат, а про процесс:
+            мягкую глину, тёплый свет и вещи, которые потом живут у вас дома.
+          </p>
+          <ul class="about__facts">
+            <li><strong>6</strong> человек в группе</li>
+            <li><strong>2,5 ч</strong> одно занятие</li>
+            <li><strong>0+</strong> опыта нужно</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= КУРСЫ ================= -->
+    <section class="courses" id="courses">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title">Курсы и занятия</h2>
+          <p class="section-sub">Выберите формат — от разового мастер-класса до полного курса.</p>
+        </header>
+
+        <div class="courses__grid">
+          <article class="card">
+            <div class="card__img">
+              <img src="images/ker5.jpg" alt="Руки лепят глиняную кружку на доске" />
+            </div>
+            <h3 class="card__title">Первое касание</h3>
+            <p class="card__desc">Разовый мастер-класс: слепите кружку или тарелку за 2,5 часа. Идеально, если никогда не лепили.</p>
+            <p class="card__meta"><span>2,5 ч</span><span>2 500 ₽</span></p>
+            <button class="btn btn--card" data-course="Первое касание">Записаться</button>
+          </article>
+
+          <article class="card">
+            <div class="card__img">
+              <img src="images/ker4.jpg" alt="Мастерская керамики: гончарные круги и полки с работами" />
+            </div>
+            <h3 class="card__title">Курс «Кружка»</h3>
+            <p class="card__desc">4 занятия: от куска глины до глазури. Заберёте свою кружку, которую будете пить каждое утро.</p>
+            <p class="card__meta"><span>4 недели</span><span>8 900 ₽</span></p>
+            <button class="btn btn--card" data-course="Курс «Кружка»">Записаться</button>
+          </article>
+
+          <article class="card">
+            <div class="card__img">
+              <img src="images/ker3.jpg" alt="Участники мастер-класса за работой" />
+            </div>
+            <h3 class="card__title">Домик-подсвечник</h3>
+            <p class="card__desc">Уютный мастер-класс: слепим и распишем керамический домик. Отличный подарок себе или близким.</p>
+            <p class="card__meta"><span>3 ч</span><span>3 200 ₽</span></p>
+            <button class="btn btn--card" data-course="Домик-подсвечник">Записаться</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ГАЛЕРЕЯ ================= -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title">Галерея</h2>
+          <p class="section-sub">Немного тепла из нашей мастерской.</p>
+        </header>
+
+        <div class="gallery__grid">
+          <figure class="gallery__item gallery__item--tall">
+            <img src="images/ker6.jpg" alt="Мастер-класс по керамике за большим столом" />
+          </figure>
+          <figure class="gallery__item">
+            <img src="images/ker7.jpg" alt="Керамический домик с красной крышей" />
+          </figure>
+          <figure class="gallery__item">
+            <img src="images/ker8.jpg" alt="Лепка кружки из глины" />
+          </figure>
+          <figure class="gallery__item gallery__item--wide">
+            <img src="images/ker9.jpg" alt="Интерьер мастерской керамики" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= КОНТАКТЫ ================= -->
+    <section class="contacts" id="contacts">
+      <div class="container contacts__inner">
+        <div class="contacts__info">
+          <h2 class="section-title">Контакты</h2>
+          <p class="hand">заходите в гости</p>
+
+          <ul class="contacts__list">
+            <li>
+              <span class="contacts__label">Телефон</span>
+              <a href="tel:+78126128676">+7 812 612 86 76</a>
+            </li>
+            <li>
+              <span class="contacts__label">Email</span>
+              <a href="mailto:keramicc@mail.ru">keramicc@mail.ru</a>
+            </li>
+            <li>
+              <span class="contacts__label">Telegram</span>
+              <a href="https://t.me/keramiccspb" target="_blank" rel="noopener">@keramiccspb</a>
+            </li>
+            <li>
+              <span class="contacts__label">Адрес</span>
+              <span>Санкт-Петербург, ул. Мастеров, 12</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form" id="contact-form" novalidate>
+          <h3 class="form__title">Записаться на занятие</h3>
+
+          <div class="form__field">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Как вас зовут" required />
+            <p class="form__error" data-error-for="name"></p>
+          </div>
+
+          <div class="form__field">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 ___ ___-__-__" required />
+            <p class="form__error" data-error-for="phone"></p>
+          </div>
+
+          <div class="form__field">
+            <label for="course">Курс</label>
+            <select id="course" name="course" required>
+              <option value="">Выберите курс</option>
+              <option>Первое касание</option>
+              <option>Курс «Кружка»</option>
+              <option>Домик-подсвечник</option>
+            </select>
+            <p class="form__error" data-error-for="course"></p>
+          </div>
+
+          <div class="form__field">
+            <label for="message">Комментарий <span class="form__optional">(необязательно)</span></label>
+            <textarea id="message" name="message" rows="3" placeholder="Удобное время, вопросы"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--full">Отправить заявку</button>
+
+          <p class="form__note">
+            Нажимая кнопку, вы соглашаетесь на обработку данных. Это учебный проект —
+            заявка никуда не отправляется.
+          </p>
+
+          <p class="form__success" id="form-success" role="status" hidden>
+            Спасибо! Мы свяжемся с вами в ближайшее время.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= ПОДВАЛ ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">Тёпка · мастерская керамики</p>
+      <p class="footer__contacts">
+        <a href="tel:+78126128676">+7 812 612 86 76</a> ·
+        <a href="mailto:keramicc@mail.ru">keramicc@mail.ru</a> ·
+        <a href="https://t.me/keramiccspb" target="_blank" rel="noopener">@keramiccspb</a>
+      </p>
+      <p class="footer__copy">© 2026 «Тёпка». Учебный проект.</p>
+    </div>
+  </footer>
+
+  <!-- ================= МОДАЛЬНОЕ ОКНО ================= -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal__close" aria-label="Закрыть окно" data-close>&times;</button>
+      <h3 class="modal__title" id="modal-title">Запись на курс</h3>
+      <p class="modal__text" id="modal-text">Оставьте контакты — мы свяжемся и подберём удобное время.</p>
+
+      <form class="form form--modal" id="modal-form" novalidate>
+        <div class="form__field">
+          <label for="m-name">Имя</label>
+          <input type="text" id="m-name" name="name" required />
+          <p class="form__error" data-error-for="m-name"></p>
+        </div>
+        <div class="form__field">
+          <label for="m-phone">Телефон</label>
+          <input type="tel" id="m-phone" name="phone" required />
+          <p class="form__error" data-error-for="m-phone"></p>
+        </div>
+        <button type="submit" class="btn btn--full">Записаться</button>
+        <p class="form__success" id="modal-success" role="status" hidden>
+          Готово! Мы скоро напишем.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
